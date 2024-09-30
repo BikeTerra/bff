@@ -28,6 +28,16 @@ The `keys` prop stores an array of data structures. Each data structure is a 2-e
 
 The first element in every `rows` item is an integer reference to a data structure in the `keys` array.
 
+## Event types
+
+| Event Type | Purpose |
+| :--------- | :------ |
+| start | Start activity |
+| stop | Stop activity |
+| lap | Split an activity |
+| session | Separate activities |
+
+
 ## Examples
 
 ### Route (minimal)
