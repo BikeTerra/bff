@@ -45,12 +45,12 @@ The first element of each `keys` array is the `type`:
 | latitude | float | WGS 84 |
 | longitude | float | WGS 84 |
 | altitude | int | cm |
-| heartRate | int | BPM |
-| cadence | int | RPM |
 | distance | int | cm |
 | speed | int | cm/s |
-| power | int | watts |
 | grade | int | grade * 100 |
+| heartRate | int | BPM |
+| cadence | int | RPM |
+| power | int | watts |
 
 ## Examples
 
