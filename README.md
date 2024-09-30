@@ -3,8 +3,6 @@ A lightweight JSON format for storing routes or activities.
 
 ## Why?
 
-The other main formats are GPX, TCX, and FIT.
-
 `GPX` doesn't support activities. `TCX` and GPX are XML-based: lots of data repetition = larger filesizes.
 
 `FIT` is a binary format. It's very efficient, but the data is difficult to view or modify without special tools.
@@ -18,9 +16,17 @@ The other main formats are GPX, TCX, and FIT.
 | name | text | Y | The route or activity title |
 | meta.description | text || Additional details |
 | meta.author | text || The author name |
-| meta.{field} | mixed || Extra data, e.g. `totalDistance`
-| keys | array | Y | the data structure: `[[<type>, [<fields>]], ...]` |
-| rows | array | Y | data rows. `rows[N][0]` is the data structure key
+| meta.{field} | mixed || Custom meta, e.g. `totalDistance`
+| keys | array | Y | row schemas; `[[<type>, [<fields>]], ...]` |
+| rows | array | Y | row data; `rows[N][0]` is the data structure index |
+
+## Key types
+The first element of each `keys` array is the `type`:
+
+| Key type | Purpose |
+| :------- | :------ |
+| event | An event (stop, lap, session) |
+| row | A data row |
 
 ## Event types
 
@@ -31,8 +37,6 @@ The other main formats are GPX, TCX, and FIT.
 | session | Separate activities |
 
 ## Data fields
-
-🚧 Work in progress... please share feedback! 🚧
 
 | Field | Datatype | Unit |
 | :---- | :------- | :--- |
