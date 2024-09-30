@@ -5,7 +5,7 @@ A lightweight JSON format for storing routes or activities.
 
 The other main formats are GPX, TCX, and FIT.
 
-`GPX` doesn't support activities. `TCX` and GPX are XML-based -- there's lots of data repetition, resulting in larger filesizes.
+`GPX` doesn't support activities. `TCX` and GPX are XML-based: lots of data repetition = larger filesizes.
 
 `FIT` is a binary format. It's very efficient, but the data is difficult to view or modify without special tools.
 
