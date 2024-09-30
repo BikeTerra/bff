@@ -16,8 +16,8 @@ The other main formats are GPX, TCX, and FIT.
 | Prop | Type | Required | Purpose |
 | :--- | :--- | :------- | :------ |
 | name | text | Y | The route or activity title |
-| meta.description | text |||
-| meta.author | text |||
+| meta.description | text || Additional details |
+| meta.author | text || The author name |
 | meta.{field} | mixed || Extra data, e.g. `totalDistance`
 | keys | array | Y | the data structure: `[[<type>, [<fields>]], ...]` |
 | rows | array | Y | data rows. `rows[N][0]` is the data structure key
@@ -30,6 +30,24 @@ The other main formats are GPX, TCX, and FIT.
 | stop | Stop activity |
 | lap | Split an activity into chunks |
 | session | Separate activities |
+
+## Official data fields
+
+🚧 Work in progress... please share feedback! 🚧
+
+| Field | Datatype | Details |
+| :---- | :------- | :--- |
+| timestamp | int | Unix epoch (seconds) |
+| type | text | mainly used for events |
+| lat | float | WGS 84 |
+| lng | float | WGS 84 |
+| alt | int | meters |
+| hr | int | BPM |
+| cadence | int | RPM |
+| distance | int | meters |
+| speed | float | m/s |
+| power | int | watts |
+| grade | float | % grade |
 
 ## Examples
 
