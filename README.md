@@ -1,4 +1,4 @@
-# Biketerra Fitness Format (.bff)
+# Biketerra Fitness Format (.bff) 🤗
 A lightweight JSON format for storing routes or activities.
 
 ## Why?
