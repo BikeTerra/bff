@@ -43,6 +43,7 @@ A lightweight JSON format for storing routes or activities.
 | power | int | watts |
 | cadence | int | RPM |
 | heartRate | int | BPM |
+| coreBodyTemp | int | °C * 100 |
 
 ## Examples
 
