@@ -19,7 +19,7 @@ A lightweight JSON format for storing routes or activities.
 | meta.{field} | mixed || Custom meta, e.g. `totalDistance`
 | keys | array | Y | row schemas; `[[fieldNames], [moreFieldNames], ...]` |
 | rows | array | Y | row data; `rows[N][0]` is the schema index |
-| events | array | N | event actions; `[timestamp, eventType, extraMeta]` |
+| events | array || event actions; `[timestamp, eventType, extraMeta]` |
 
 ## Event types
 
