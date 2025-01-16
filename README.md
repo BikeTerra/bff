@@ -17,9 +17,9 @@ A lightweight JSON format for storing routes or activities.
 | meta.description | text || Additional details |
 | meta.author | text || The author name |
 | meta.{field} | mixed || Custom meta, e.g. `totalDistance`
-| keys | array | Y | row schemas; `[[fieldNames], [moreFieldNames], ...]` |
+| keys | array | Y | row schemas; `[[fieldNames], ...]` |
 | rows | array | Y | row data; `rows[N][0]` is the schema index |
-| events | array || event actions; `[timestamp, eventType, extraMeta]` |
+| events | array || event actions; `[[timestamp, eventType, extraMeta], ...]` |
 
 ## Event types
 
@@ -98,7 +98,7 @@ A lightweight JSON format for storing routes or activities.
 
 ### Triathalon (advanced)
 
-An activity split into 3 sessions (running, swimming, biking). The biking section is split into laps.
+An activity split into 3 sessions (running, swimming, cycling). The cycling session is split into laps.
 
 ```json
 {
