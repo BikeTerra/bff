@@ -104,9 +104,9 @@ An activity split into 3 sessions (running, swimming, biking). The biking sectio
 {
     "name": "Triathlon Activity",
     "events": [
-        [1727656800000, "session", {sport: "running"}],
-        [1727658900000, "session", {sport: "swimming"}],
-        [1727660700000, "session", {sport: "cycling"}],
+        [1727656800000, "session", {"sport": "running"}],
+        [1727658900000, "session", {"sport": "swimming"}],
+        [1727660700000, "session", {"sport": "cycling"}],
         [1727662500000, "lap"],
         [1727663400000, "lap"]
     ],
